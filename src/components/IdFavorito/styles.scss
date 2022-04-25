@@ -1,0 +1,37 @@
+.home-favorito {
+    position: absolute;
+    top: 0;
+    left: 2px;
+    float:left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 50px;
+    margin: -4px auto;
+    padding: 1rem;
+    background: #000;
+    cursor: pointer;
+  
+    background:
+      -moz-linear-gradient(45deg,  transparent 50%, #000 50%),
+      -moz-linear-gradient(45deg,  transparent 50%, #000 50%),
+      -moz-linear-gradient(225deg, transparent 0px, #000 0px),
+      -moz-linear-gradient(315deg, transparent 0px, #000 0px);
+    background:
+      -o-linear-gradient(45deg,  transparent 50%, #000 50%),
+      -o-linear-gradient(45deg,  transparent 50%, #000 50%),
+      -o-linear-gradient(225deg, transparent 0px, #000 0px),
+      -o-linear-gradient(315deg, transparent 0px, #000 0px);
+    background:
+      -webkit-linear-gradient(45deg,  transparent 50%, #000 50%),
+      -webkit-linear-gradient(135deg, transparent 50%, #000 50%),
+      -webkit-linear-gradient(225deg, transparent 0px, #000 0px),
+      -webkit-linear-gradient(315deg, transparent 0px, #000 0px);
+  
+    background-position: bottom left, bottom right, top right, top left;
+    -moz-background-size: 50% 50%;
+    -webkit-background-size: 50% 50%;
+    background-size: 50% 50%;
+    background-repeat: no-repeat;
+}

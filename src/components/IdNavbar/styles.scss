@@ -1,0 +1,31 @@
+.cabecalho--navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+    padding: 0 calc((100% - 1306px)/ 2);
+    background: #fff;
+    border-bottom: 1px solid #ccc;
+    &--endereco {
+        position: relative;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    &--content {
+        display: inline-block;
+        min-width: 930px;
+        max-width: 1306px;
+        padding: 10px 20px;
+        margin: 0 auto;
+        &--list {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+            text-transform: uppercase; 
+        }
+    }
+}
