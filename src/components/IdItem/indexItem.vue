@@ -1,7 +1,6 @@
 <template>
   <!--class="mn-item"-->
   <article class="home-produtos">
-
     <home-favorito 
       v-if="$route.name === 'Home'"
       class="home-produtos__favorito"
@@ -13,16 +12,16 @@
       :product-id="product.id"
     />
 
-    <div class="home-lista-item__container">
+    <div class="home-produtos-item__container">
       <img
-        class="home-lista-item__container__image"
-        src="https://via.placeholder.com/200x200" 
+        class="home-produtos-item__container__image"
+        :src="product.image" 
         :alt="product.title"
       />
-      <p class="home__lista-item__titulo">{{ product.title }}</p>
-      <p class="home__lista-item__preco">{{`${price}`}}</p>
+      <p class="home-produtos-item__titulo">{{ product.title }}</p>
+      <p class="home-produtos-item__preco">{{`${price}`}}</p>
       <router-link
-        class="home__lista-item__botao"
+        class="home-produtos-item__botao"
         :to="{name: 'Product',  params: { sku: product.sku }}">
         <eye-icon />&nbsp; Ver detalhes
       </router-link>

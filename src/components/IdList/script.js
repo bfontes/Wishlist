@@ -1,7 +1,7 @@
 export default {
     name: 'IdList',
     components: {
-      'home-produto': () => import('../IdItem/indexItem.vue'),
+      'home-produtos': () => import('../IdItem/indexItem.vue'),
     },
     props: {
       products: {

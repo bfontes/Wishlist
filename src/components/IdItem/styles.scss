@@ -1,6 +1,7 @@
 .home-produtos {
     position: relative;
     width: 100%;
+    border: 1px solid red;
     max-width: 12.5rem;
     height: 15.3125rem;
     &__favorito {
@@ -16,7 +17,7 @@
         background-repeat: no-repeat;
     }
 }
-.home__lista-item {
+.home-produtos-item {
     &__container {
         display: flex;
         flex-direction: column;
@@ -28,8 +29,7 @@
         padding: 8px;
     }
     &__image {
-        width: 200px;
-        height: 200px;
+        width: 100px;
     }
     &__titulo {
         font-size: 1.2rem;

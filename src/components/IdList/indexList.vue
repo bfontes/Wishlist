@@ -2,20 +2,20 @@
   <div>
     <ul 
       v-if="products.length"
-      class="home__lista"
+      class="home-lista"
     >
       <li
         v-for="product in products"
         :key="product.id"
-        class="home__lista--itens"
+        class="home-lista--itens"
       >
-        <home-produto :product.sync="product"/>
+      <home-produtos :product="product"></home-produtos>
       </li>
     </ul>
  
     <section 
       v-else 
-      class="home__lista__no-data"
+      class="home-lista__no-data"
     >
       <h1>Nenhum produto encontrado</h1>
     </section>
