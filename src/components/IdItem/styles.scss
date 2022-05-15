@@ -1,9 +1,9 @@
 .home-produtos {
     position: relative;
     width: 100%;
-    border: 1px solid red;
     max-width: 12.5rem;
     height: 15.3125rem;
+
     &__favorito {
         position: absolute;
         top: 0;
@@ -17,6 +17,7 @@
         background-repeat: no-repeat;
     }
 }
+
 .home-produtos-item {
     &__container {
         display: flex;
@@ -29,7 +30,8 @@
         padding: 8px;
     }
     &__image {
-        width: 100px;
+        height: 100px;
+        object-fit: cover;
     }
     &__titulo {
         font-size: 1.2rem;

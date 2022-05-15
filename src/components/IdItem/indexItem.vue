@@ -14,7 +14,7 @@
 
     <div class="home-produtos-item__container">
       <img
-        class="home-produtos-item__container__image"
+        class="home-produtos-item__image"
         :src="product.image" 
         :alt="product.title"
       />

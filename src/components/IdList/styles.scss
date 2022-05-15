@@ -2,11 +2,13 @@
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-start;
+
     &--itens {
         padding: 1rem 0.5rem;
         list-style-type: none;
     }
+
     &__no-data {
       -ms-box-orient: horizontal;
       display: -webkit-box;
