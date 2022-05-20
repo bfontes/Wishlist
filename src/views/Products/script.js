@@ -1,7 +1,7 @@
 import { mapGetters } from 'vuex';
 
 export default {
-  name: 'ProductsView',
+  name: 'Home',
   components: {
     'home-lista': () => import('@/components/IdList/indexList.vue'),
   },
