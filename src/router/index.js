@@ -2,6 +2,7 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Products from '../views/Products'
 import Product from '../views/Product'
+import IdLogin from '../views/IdLogin'
 
 
 Vue.use(VueRouter)
@@ -14,6 +15,19 @@ const routes = [
     meta: {
       breadcrumbs: [
         { name: 'Home'},
+      ]
+    }
+  },
+  {
+    path: '/external',
+    name: 'external',
+    component: IdLogin,
+    //beforeEnter() {
+      //window.location.replace('../views/IdLogin/index.vue');
+    //},
+    meta: {
+      breadcrumbs: [
+        { name: 'external', link: 'external'},
       ]
     }
   },
@@ -38,7 +52,7 @@ const routes = [
         { name: 'produto',},
       ]
     }
-  }
+  },
 ]
 
 const router = new VueRouter({

@@ -32,5 +32,6 @@ export default new Vuex.Store({
     setWishlist: ({commit}, payload) => commit('SET_WISHLIST', payload),
     setProducts: ({commit}, payload) => commit('SET_PRODUCTS', payload),
     setProduct: ({commit}, payload) => commit('SET_PRODUCT', payload),
+
   },
 })

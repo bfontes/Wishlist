@@ -16,11 +16,16 @@
                     <img src="../../images/botao-home.png" style="width: 30px; height:30px; margin-right: 10px;"/>
                     <span> Home </span>
                   </a>
-                    <a href="" class="cabecalho__nav--itens">
+                  <a href="/external" class="cabecalho__nav--itens">
+                       <router-link 
+                        class="cabecalho__nav--itens" 
+                        :to="{name: 'external'}"
+                        >
+                        </router-link>
                         <img src="../../images/user.png" style="width: 30px; height:30px; margin-right: 12px;"/>
-                        <span id="attendance"> Usuário </span>
-                    </a>
-                    <a href="/lista-de-desejos" class="cabecalho__nav--itens"> 
+                        <span> Usuário </span>
+                  </a>
+                  <a href="/lista-de-desejos" class="cabecalho__nav--itens"> 
                       <router-link 
                         class="cabecalho__nav--itens" 
                         :to="{name: 'Wishlist'}"
@@ -28,7 +33,7 @@
                         </router-link>
                       <img src="../../images/coracao.png" style="width: 30px; height:30px; margin-right: 12px;"/>
                       <span> Lista de desejos </span> 
-                    </a>
+                  </a>
                 </nav>
 
                 <input type="search" autocomplete="off" class="cabecalho__menu-pesquisa"  placeholder="O que você está procurando?" style="box-shadow: inset 3px 2px 1px #ccc;
