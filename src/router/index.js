@@ -28,6 +28,7 @@ const routes = [
     meta: {
       breadcrumbs: [
         { name: 'external', link: 'external'},
+        { name: 'Home', link: 'Home'},
       ]
     }
   },
